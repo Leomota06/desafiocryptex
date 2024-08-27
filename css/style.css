@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+
+:root{
+    --cor-primaria:hwb(0 100% 0%);
+    --cor-secundaria:rgb(161, 9, 9);
+    --cor-terciaria:#00ff15;
+    --cor-rover:#da2528;
+
+    --font-basica: fira code, monospace;
+    --font-titulo:"Press Start 2P", system-ui;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(223, 14, 14);
+    color:var(--cor-secundaria);
+    /* height: 100vh; */
+    box-sizing: border-box; /*isso nao deixa nada sair do body */
+}
+
+*{
+    margin:0;
+    padding: 0;
+    font-family:var(--font-basica);
+}
+
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1.5%;
+    padding-left: 1.5%;
+}
+
+.cabecalho img{
+    width: auto;
+    height: auto;
+}
+
+
+
+.conteudo{
+    padding: 4%;
+    display: flex;
+    flex-direction: column;
+}
+
+.areaBotoes{
+    display: flex;
+    flex-direction: column;
+    width: 150%;
+    height: 350px;
+}
+
+.textos{
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+}
+
+#textoDecodificar{
+    box-shadow: 10px 5px 5px black;
+    border: 0 none;
+    outline: 0;
+    background-color: rgb(255, 255, 255);
+    width: 300px;
+    height: 150px;
+    padding: 10px;
+    resize: none;
+    font-size: 32px;
+    height: 300px;
+    color: var(--cor-terciaria);
+}
+
+
+#textoDecodificado{
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+    width: 40%;
+    font-size: 32px;
+    color: var(--cor-secundaria);
+    height: 100%;
+}
+
+#textoDecodificado button{
+    align-self: center;
+}
+
+
+#textoConfigurado{
+    background-color: whitesmoke;
+    box-shadow: 10px 5px 5px black;
+    border: 0 none;
+    outline: 0;
+    width: auto;
+    height: auto;
+    font-size: 32px;
+    height: 500px;
+}
+
+#textoDecodificado p{
+    font-size: 32px;
+    text-align: center;
+}
+
+#textoDecodificado .img{
+    max-width: 450px;
+    width: auto;
+    height: auto;
+    margin-top: 4%;
+    align-self: center;
+}
+
+.botoes{
+    gap: 24px;
+    display: flex;
+    justify-content:center;
+}
+
+.Codificar{
+    padding: 2% 10%;
+    border-radius: 24px;
+    background-color: var(--cor-terciaria);
+    color: var(--cor-primaria);
+    border-color: var(--cor-terciaria);
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.Codificar:hover{
+    border: solid var(--cor-rover);
+    transition: 0.5 all;
+}
+
+.Decodificar{
+    border-color: var(--cor-terciaria);
+    padding: 2% 10%;
+    border-radius: 24px;
+    font-size: 22px;
+    cursor: pointer;
+    background-color: var(--cor-primaria);
+}
+
+.Decodificar:hover{
+    box-shadow: 10px 5px 5px black;
+    border: solid var(--cor-rover);
+    transition: 0.5 all;
+    background-color: var(--cor-rover);
+}
+
+.copiar{
+    padding: 2.5% 10%;
+    border-radius: 24px;
+    background-color: var(--cor-terciaria);
+    color: var(--cor-primaria);
+    border-color: var(--cor-terciaria);
+    font-size: 22px;
+    cursor: pointer;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.copiar:hover{
+    border: solid var(--cor-rover);
+    transition: 0.5 all;
+}
+
+.rodape{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1%;
+    background-color: var(--cor-primaria);
+    font-family: var(--font-basica);
+    font-weight: 400;
+    font-size: 1.5rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.rodape p{
+    font-size: 20px;
+    padding-bottom: 5px;
+}

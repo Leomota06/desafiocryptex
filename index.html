@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="./css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Cryptex</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <img class="img__cabecalho" src="./imagens/alura-logo.png">
+    </header>
+    <main>
+        <div class="conteudo">
+            <div class="textos">
+                <div class="areaBotoes">
+                    <textarea type="text" id="textoDecodificar" placeholder="Digite aqui" name="textoDecodificar"></textarea>
+                        <div class="botoes">
+                            <button class="Codificar" onclick="Criptografando()">Codificar</button>
+                            <button class="Decodificar" onclick="Descriptografando()">Decodificar</button>
+                        </div>
+                </div>
+                <div id="textoDecodificado">
+                    <img class="img" src="./imagens/cryptex2.png" alt="cryptex">
+                    <p class="paragrafo1">Nenhuma mensagem encontrada</p>
+                </div>
+            </div>
+        
+        </div>
+    </main>
+    <script src="./script/app.js"></script>
+    <footer class="rodape">
+        <p>Desenvolvido por Leonardo Mota - 2024 - Todos os direitos reservados</p>
+            <div class="rodape__links"></div>
+    </footer>
+</body>
+</html>
